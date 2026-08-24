@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1C1C1E">
+
+    <!-- 结果显示区 -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:text="0"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:background="#2C2C2E" />
+
+    <!-- 按钮网格 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:layout_marginTop="16dp">
+
+        <!-- 第1行：C、退格、除号、乘号 -->
+        <Button
+            android:text="C"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+        <Button
+            android:text="⌫"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+        <Button
+            android:text="÷"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+        <Button
+            android:text="×"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+
+        <!-- 第2行：7、8、9、减号 -->
+        <Button
+            android:text="7"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="8"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="9"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+
+        <!-- 第3行：4、5、6、加号 -->
+        <Button
+            android:text="4"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FF9500"
+            android:gravity="center"
+            android:background="#2C2C2E" />
+
+        <!-- 第4行：1、2、3、等号 -->
+        <Button
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="2"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="3"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#FF9500" />
+
+        <!-- 第5行：0（占2列）、小数点 -->
+        <Button
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+        <Button
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3A3A3C" />
+
+    </GridLayout>
+
+</LinearLayout>
